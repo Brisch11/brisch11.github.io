@@ -1,0 +1,25 @@
+{
+  "name": "brittney",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "NODE_ENV='development' gulp",
+    "gulp-build": "NODE_ENV='production' gulp build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "bourbon": "^5.0.0-beta.8",
+    "gulp": "^3.9.1",
+    "gulp-if": "^2.0.2",
+    "gulp-minify": "^2.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.2",
+    "normalize-scss": "^7.0.0",
+    "susy": "^3.0.1"
+  }
+}

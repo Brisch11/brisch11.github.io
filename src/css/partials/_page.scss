@@ -1,0 +1,45 @@
+.page {
+	@at-root &__header {
+		background-image: url(http://via.placeholder.com/1440x889);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: ((150 / 1440) * 100%);
+		position: relative;
+
+		&:after {
+			content: '';
+			display: block;
+			padding-top: ((modular-scale(-3, 1440px, $golden) / 1440px) * 100%);
+		}
+	}
+
+	@at-root &__content {
+		background: susy-svg-grid() no-repeat scroll;
+		margin: 0 auto;
+		max-width: 1440px;
+	}
+
+	@at-root &__title {
+		text-align: center;
+	}
+
+	@at-root &__footer {
+		background: $dark-gray;
+		color: contrast-switch($dark-gray);
+	}
+}
+
+.avatar {
+	bottom: 0;
+	left: 50%;
+	max-width: 300px;
+	position: absolute;
+	transform: translate(-50%, 50%);
+	width: ((300px / 1440px) * 100%);
+
+	@at-root &__image {
+		border-radius: 500px;
+		border: solid 5px #fff;
+	}
+}
