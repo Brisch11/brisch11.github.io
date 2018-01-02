@@ -3,6 +3,11 @@ html {
   font-family: $base-font-family;
   font-size: 100%;
   line-height: $base-line-height;
+
+  @media screen and (map-get($media, 'small-desktop')) {
+    font-size: 120%;
+  }
+
 }
 
 h1,
@@ -13,7 +18,7 @@ h5,
 h6 {
   font-family: $heading-font-family;
   line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+  margin: 0 0 $small-spacing / 2;
 }
 
 h1 {

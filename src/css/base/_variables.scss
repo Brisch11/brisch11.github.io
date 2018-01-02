@@ -1,6 +1,6 @@
 // Typography
-$base-font-family: $font-stack-system;
-$heading-font-family: $base-font-family;
+$base-font-family: 'Merriweather', serif;
+$heading-font-family: 'Lato', sans-serif;
 
 // Line height
 $base-line-height: 1.5;
@@ -13,14 +13,14 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #1565c0;
-$dark-gray: #333;
+$purple: #77448B;
+$dark-gray: #3D3D3D;
 $medium-gray: #999;
 $light-gray: #ddd;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$action-color: $blue;
+$action-color: $purple;
 
 // Border
 $base-border-color: $light-gray;
@@ -45,4 +45,13 @@ $susy: (
   'columns': susy-repeat(12),
   'spread': 'narrow',
   'container-spread': 'narrow',
+);
+
+$media: (
+  'mobile-down'       : 'max-width: #{(479 / 16)}em',
+  'tablet'            : 'min-width: #{(480 / 16)}em',
+  'tablet-down'       : 'max-width: #{(767 / 16)}em',
+  'small-desktop'     : 'min-width: #{(768 / 16)}em',
+  'small-desktop-down': 'max-width: #{(1199 / 16)}em',
+  'desktop'           : 'min-width: #{(1200 / 16)}em',
 );

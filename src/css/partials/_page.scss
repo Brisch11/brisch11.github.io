@@ -1,6 +1,6 @@
 .page {
 	@at-root &__header {
-		background-image: url(http://via.placeholder.com/1440x889);
+		background-image: url(../../assets/images/header.jpg);
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -11,13 +11,18 @@
 			content: '';
 			display: block;
 			padding-top: ((modular-scale(-3, 1440px, $golden) / 1440px) * 100%);
+
+			@media screen and (map-get($media, 'small-desktop')) {
+				padding-top: ((modular-scale(-4, 1440px, $golden) / 1440px) * 100%);
+			}
 		}
 	}
 
 	@at-root &__content {
-		background: susy-svg-grid() no-repeat scroll;
+		// background: susy-svg-grid() no-repeat scroll;
 		margin: 0 auto;
-		max-width: 1440px;
+		max-width: 37em;
+		padding: 0 1em;
 	}
 
 	@at-root &__title {
