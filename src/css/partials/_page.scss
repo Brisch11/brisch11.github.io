@@ -48,3 +48,39 @@
 		border: solid 5px #fff;
 	}
 }
+
+.research-abstract {
+	.inner {
+		margin: 0 auto $base-spacing;
+		max-width: 37em;
+		padding: $small-spacing 1em;
+	}
+
+	&:nth-child(odd) {
+		background: $light-gray;
+	}
+}
+
+.page__content-abstract {
+	max-width: none;
+	padding: 0;
+}
+
+.menu {
+	ul {
+		display: flex;
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: $base-spacing;
+	}
+
+	li {
+		flex: 1 1 auto;
+	}
+}
+
+.page__content-abstract .menu {
+	margin: 0 auto $base-spacing;
+	max-width: 37em;
+	padding: 0 1em;
+}
