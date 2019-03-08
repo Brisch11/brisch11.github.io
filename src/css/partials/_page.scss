@@ -1,4 +1,7 @@
 .page {
+	position: relative;
+	z-index: 1;
+
 	@at-root &__header {
 		background-image: url(../../assets/images/header.jpg);
 		background-position: center center;
@@ -83,4 +86,25 @@
 	margin: 0 auto $base-spacing;
 	max-width: 37em;
 	padding: 0 1em;
+}
+
+.page__content-resume {
+	@media screen and (min-width: #{(modular-scale(1, 37em, $golden) + 2em)}) {
+		max-width: modular-scale(1, 37em, $golden);
+	}
+}
+
+.resume__date {
+	float: right;
+	text-align: right;
+
+}
+
+.resume__experience-title {
+	margin-right: gutter();
+
+}
+
+.resume__experience-skills {
+	clear: both;
 }
